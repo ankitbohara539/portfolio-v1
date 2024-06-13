@@ -1,369 +1,355 @@
 <!-- My  portfolio version 1 -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ankit Bohara Portfolio Website HTML and CSS</title>
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./assets/style.css" />
-    <!-- Box Icon Link for Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- Header & Navbar Section -->
-    <header>
-      <nav>
-        <div class="nav_logo">
-          <a href="#">
-         <h1 class="tx">AB</h1>
-            
-        
-          
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Bohara Portfolio Website HTML and CSS</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./assets/style.css" />
+  <!-- Box Icon Link for Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header & Navbar Section -->
+  <header>
+    <nav>
+      <div class="nav_logo">
+        <a href="#">
+          <h1 class="tx">AB</h1>
+
+
+
+        </a>
+      </div>
+
+      <input type="checkbox" id="click" />
+      <label for="click">
+        <i class="menu_btn bx bx-menu"></i>
+        <i class="close_btn bx bx-x"></i>
+      </label>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#download">Download-CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero_section">
+    <div class="section_container">
+      <div class="hero_container">
+        <div class="text_section">
+          <h2>Hi I'm Ankit Bohara</h2>
+          <h3>Aspiring to Software Engineer </h3>
+          <p>
+            <i> "Empowering innnovation through technology expertise"</i>
+          </p>
+
+          <div class="hero_section_button">
+            <button class="button">Learn More</button>
+            <button class="button">Hire me</button>
+          </div>
+        </div>
+
+        <div class="image_section">
+          <img src="./assets/images/profile.png" alt="Profile Img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about_us" id="about">
+    <div class="section_container">
+      <div class="about_container">
+        <div class="text_section">
+          <h2 class="section_title">About me</h2>
+          <p>
+            Motivated and detail-orinted computer science student with foundational skill
+            in Html & css, WordPress, git, GitHUb, etc. Knowledble in database management.
+            Seeking an internship to apply my skill and gain practical experience in backend
+            developeent.
+          </p>
+        </div>
+        <!-- VIDEO ADDED HERE -->
+        <div class="image_section">
+          <video id="myVideo" width="300px" height="500px" muted>
+            <source src="./assets/images/vid.mp4" type="video/mp4">
+          </video>
+
+          <button onclick="playVid()" type="button">Play</button>
+          <button onclick="pauseVid()" type="button">Pause</button>
+          <!-- JAVA SCRIPT -->
+          <script>
+            var x = document.getElementById("myVideo");
+
+            function playVid() {
+              x.play();
+            }
+
+            function pauseVid() {
+              x.pause();
+            } 
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="services" id="skills">
+    <h2 class="section_title">My Skills</h2>
+    <div class="section_container">
+      <div class="service_container">
+        <div class="services_items">
+          <img src="./assets/images/htmlcss.png" alt="html-css" />
+          <div class="services_text">
+            <h3>Html & Css</h3>
+            <p>
+              Contact me at ankitbohara68@gmail.com.
+            </p>
+          </div>
+        </div>
+        <div class="services_items">
+          <img src="./assets/images/wordpress.png" style="border-radius: 500px; height: 300px; width: 300px;"
+            alt="WordPress" />
+          <div class="services_text">
+            <h3>WordPress</h3>
+            <p>
+              Contact me at ankitbohara68@gmail.com.
+            </p>
+          </div>
+        </div>
+        <div class="services_items">
+          <img src="./assets/images/git.png" style="border-radius: 5px; height: 300px; width: 300px;" alt="git" />
+          <div class="services_text">
+            <h3>Git</h3>
+            <p>Contact me at ankitbohara68@gmail.com.</p>
+          </div>
+        </div>
+        <div class="services_items">
+          <img src="./assets/images/github.jpg" style="border-radius: 250px;" alt="GitHUb" />
+          <div class="services_text">
+            <h3>GitHub</h3>
+            <p>
+              Contact me at ankitbohara68@gmail.com.
+            </p>
+          </div>
+        </div>
+        <div class="services_items">
+          <img src="./assets/images/java.jpg" style="border-radius: 300px; height: 280px; width: 290px;" alt="Java" />
+          <div class="services_text">
+            <h3>Java</h3>
+            <p>Contact me at ankitbohara68@gmail.com.</p>
+          </div>
+        </div>
+        <div class="services_items">
+          <img src="./assets/images/c.png" style="height: 270px; width: 260px;" alt="c" />
+          <div class="services_text">
+            <h3>C Programming</h3>
+            <p>
+              Contact me at ankitbohara68@gmail.com.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why me Section -->
+  <section class="why_us" id="portfolio">
+    <h2 class="section_title">Why me?</h2>
+    <div class="section_container">
+      <div class="why_container">
+        <div class="why_items">
+          <img src="./assets/images/creative.png" alt="creative" />
+          <div class="why_us_text">
+            <h3>Creative and modern </h3>
+            <p>
+              Bringing fresh, innovative ideas to web development.
+            </p>
+          </div>
+        </div>
+        <div class="why_items">
+          <img src="./assets/images/quality.png" alt="Quality" />
+          <div class="why_us_text">
+            <h3>Quality Focused</h3>
+            <p>
+              Committed to creating responsive, user-friendly websites with clean code.
+            </p>
+          </div>
+        </div>
+        <div class="why_items">
+          <img src="./assets/images/detail.png" alt="detail-orinted" />
+          <div class="why_us_text">
+            <h3>Detail oriented</h3>
+            <p>
+              Ensuring accessibility and SEO-friendly practices in every project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2 class="section_title">Photo Gallery</h2>
+    <div class="section_container">
+      <div class="gallery_container">
+        <div class="gallery_items">
+          <img src="./assets/images/p1.jpg" alt="Gallery Image" />
+        </div>
+        <div class="gallery_items">
+          <img src="./assets/images/p2.jpg" alt="Gallery Image" />
+        </div>
+        <div class="gallery_items">
+          <img src="./assets/images/p3.jpeg" alt="Gallery Image" />
+        </div>
+        <div class="gallery_items">
+          <img src="./assets/images/p4.jpg" alt="Gallery Image" />
+        </div>
+        <div class="gallery_items">
+          <img src="./assets/images/p5.jpg" alt="Gallery Image" />
+        </div>
+        <div class="gallery_items">
+          <img src="./assets/images/p6.jpg" alt="Gallery Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="section_title">Contact me</h2>
+    <div class="section_container">
+      <div class="contact_container">
+        <div class="contact_form">
+          <form action="#">
+            <div class="field">
+              <label for="Name">Full Name</label>
+              <input type="text" id="Name" placeholder="Your Name" required />
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input type="text" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="field">
+              <label for="number">Your Number</label>
+              <input type="number" id="number" placeholder="Your Contact Number" required />
+            </div>
+            <div class="field">
+              <label for="textarea">Any message</label>
+              <textarea name="textarea" id="textarea" placeholder="Your Message"></textarea>
+            </div>
+
+            <button class="button" id="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact_text">
+          <div class="contact_items">
+            <i class="bx bx-current-location"></i>
+            <div class="contact_details">
+              <h3>Location</h3>
+              <p>Kathmandu, Nepal</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-envelope"></i>
+            <div class="contact_details">
+              <h3>General Enquries</h3>
+              <p>ankitbohara68@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-phone-call"></i>
+            <div class="contact_details">
+              <h3>Call me</h3>
+              <p>+977-9812660909</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-time-five"></i>
+            <div class="contact_details">
+              <h3>Available</h3>
+              <p>depends on college routine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cv" id="download">
+    <div>
+      <h1 style="text-align: center;">You can download my cv from here</h1>
+
+      <p style="text-align: center;">Clickhere:
+      <p>
+        <a href="./assets/images/cv.pdf" download>
+          <img src="./assets/images/dwd.png" alt="W3Schools" width="104" height="102 ">
+        </a>
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="section_container">
+      <div class="footer_section">
+        <div class="footer_logo">
+          <a href="index.html">
+
+            <h2>More infomation </h2>
           </a>
         </div>
 
-        <input type="checkbox" id="click" />
-        <label for="click">
-          <i class="menu_btn bx bx-menu"></i>
-          <i class="close_btn bx bx-x"></i>
-        </label>
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#download">Download-CV</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero_section">
-      <div class="section_container">
-        <div class="hero_container">
-          <div class="text_section">
-            <h2>Hi I'm Ankit Bohara</h2>
-            <h3>Aspiring to Software Engineer </h3>
-            <p>
-             <i> "Empowering innnovation through technology expertise"</i>
-            </p>
-
-            <div class="hero_section_button">
-              <button class="button">Learn More</button>
-              <button class="button">Hire me</button>
-            </div>
-          </div>
-
-          <div class="image_section">
-            <img src="./assets/images/profile.png" alt="Profile Img" />
-          </div>
+        <div class="useful_links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- About Us Section -->
-    <section class="about_us" id="about">
-      <div class="section_container">
-        <div class="about_container">
-          <div class="text_section">
-            <h2 class="section_title">About me</h2>
-            <p>
-              Motivated and detail-orinted computer science student with foundational skill
-              in Html & css, WordPress, git, GitHUb, etc. Knowledble in database management. 
-              Seeking an internship to apply my skill and gain practical experience in backend
-              developeent.
-            </p>
-          </div>
-<!-- VIDEO ADDED HERE -->
-          <div class="image_section">
-            <video id="myVideo" width="300px" height="500px" muted >
-                <source src="./assets/images/vid.mp4" type="video/mp4"> 
-              </video>
-
-            <button onclick="playVid()" type="button">Play</button>
-            <button onclick="pauseVid()" type="button">Pause</button> 
-<!-- JAVA SCRIPT -->
-        <script>
-           var x = document.getElementById("myVideo"); 
-
-             function playVid() { 
-           x.play(); 
-                 } 
-
-        function pauseVid() { 
-          x.pause(); 
-      } 
-       </script>
-               
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="services" id="skills">
-      <h2 class="section_title">My Skills</h2>
-      <div class="section_container">
-        <div class="service_container">
-          <div class="services_items">
-            <img src="./assets/images/htmlcss.png" alt="html-css" />
-            <div class="services_text">
-              <h3>Html & Css</h3>
-              <p>
-               Contact me at ankitbohara68@gmail.com.
-              </p>
-            </div>
-          </div>
-          <div class="services_items">
-            <img src="./assets/images/wordpress.png" style="border-radius: 500px; height: 300px; width: 300px;" alt="WordPress" />
-            <div class="services_text">
-              <h3>WordPress</h3>
-              <p>
-                Contact me at ankitbohara68@gmail.com.
-              </p>
-            </div>
-          </div>
-          <div class="services_items">
-            <img src="./assets/images/git.png" style="border-radius: 5px; height: 300px; width: 300px;" alt="git" />
-            <div class="services_text">
-              <h3>Git</h3>
-              <p>Contact me at ankitbohara68@gmail.com.</p>
-            </div>
-          </div>
-          <div class="services_items">
-            <img src="./assets/images/github.jpg" style="border-radius: 250px;" alt="GitHUb" />
-            <div class="services_text">
-              <h3>GitHub</h3>
-              <p>
-                Contact me at ankitbohara68@gmail.com.
-              </p>
-            </div>
-          </div>
-          <div class="services_items">
-            <img
-              src="./assets/images/java.jpg" style="border-radius: 300px; height: 280px; width: 290px;"
-              alt="Java"
-            />
-            <div class="services_text">
-              <h3>Java</h3>
-              <p>Contact me at ankitbohara68@gmail.com.</p>
-            </div>
-          </div>
-          <div class="services_items">
-            <img src="./assets/images/c.png" style="height: 270px; width: 260px;" alt="c" />
-            <div class="services_text">
-              <h3>C Programming</h3>
-              <p>
-                Contact me at ankitbohara68@gmail.com.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why me Section -->
-    <section class="why_us" id="portfolio">
-      <h2 class="section_title">Why me?</h2>
-      <div class="section_container">
-        <div class="why_container">
-          <div class="why_items">
-            <img src="./assets/images/creative.png"  alt="creative" />
-            <div class="why_us_text">
-              <h3>Creative and modern </h3>
-              <p>
-                Bringing fresh, innovative ideas to web development.
-              </p>
-            </div>
-          </div>
-          <div class="why_items">
-            <img src="./assets/images/quality.png" alt="Quality" />
-            <div class="why_us_text">
-              <h3>Quality Focused</h3>
-              <p>
-                Committed to creating responsive, user-friendly websites with clean code.
-              </p>
-            </div>
-          </div>
-          <div class="why_items">
-            <img src="./assets/images/detail.png" alt="detail-orinted" />
-            <div class="why_us_text">
-              <h3>Detail oriented</h3>
-              <p>
-                Ensuring accessibility and SEO-friendly practices in every project.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-      <h2 class="section_title">Photo Gallery</h2>
-      <div class="section_container">
-        <div class="gallery_container">
-          <div class="gallery_items">
-            <img src="./assets/images/p1.jpg" alt="Gallery Image" />
-          </div>
-          <div class="gallery_items">
-            <img src="./assets/images/p2.jpg" alt="Gallery Image" />
-          </div>
-          <div class="gallery_items">
-            <img src="./assets/images/p3.jpeg" alt="Gallery Image" />
-          </div>
-          <div class="gallery_items">
-            <img src="./assets/images/p4.jpg" alt="Gallery Image" />
-          </div>
-          <div class="gallery_items">
-            <img src="./assets/images/p5.jpg" alt="Gallery Image" />
-          </div>
-          <div class="gallery_items">
-            <img src="./assets/images/p6.jpg" alt="Gallery Image" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="section_title">Contact me</h2>
-      <div class="section_container">
-        <div class="contact_container">
-          <div class="contact_form">
-            <form action="#">
-              <div class="field">
-                <label for="Name">Full Name</label>
-                <input type="text" id="Name" placeholder="Your Name" required />
-              </div>
-              <div class="field">
-                <label for="email">Your Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="field">
-                <label for="number">Your Number</label>
-                <input
-                  type="number"
-                  id="number"
-                  placeholder="Your Contact Number"
-                  required
-                />
-              </div>
-              <div class="field">
-                <label for="textarea">Any message</label>
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-
-              <button class="button" id="submit">Submit</button>
-            </form>
-          </div>
-
-          <div class="contact_text">
-            <div class="contact_items">
+        <div class="contact_us">
+          <h3>Contact</h3>
+          <ul>
+            <li>
               <i class="bx bx-current-location"></i>
-              <div class="contact_details">
-                <h3>Location</h3>
-                <p>Kathmandu, Nepal</p>
-              </div>
-            </div>
-            <div class="contact_items">
-              <i class="bx bxs-envelope"></i>
-              <div class="contact_details">
-                <h3>General Enquries</h3>
-                <p>ankitbohara68@gmail.com</p>
-              </div>
-            </div>
-            <div class="contact_items">
-              <i class="bx bxs-phone-call"></i>
-              <div class="contact_details">
-                <h3>Call me</h3>
-                <p>+977-9812660909</p>
-              </div>
-            </div>
-            <div class="contact_items">
+              <span>Kathmandu, Nepal</span>
+            </li>
+            <li>
+              <i class="bx bxs-phone-call"></i> <span>+977-9812660909</span>
+            </li>
+            <li>
               <i class="bx bxs-time-five"></i>
-              <div class="contact_details">
-                <h3>Available</h3>
-                <p>depends on college routine</p>
-              </div>
-            </div>
-          </div>
+              <span> Currently working on own projects</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow_us">
+          <h3>Follow</h3>
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram-alt"></i>
         </div>
       </div>
-    </section>
-    <section class="cv" id="download">
-      <div>
-        <h1 style="text-align: center;">You can download my cv from here</h1>
+    </div>
+  </footer>
+</body>
 
-    <p style="text-align: center;">Clickhere:<p>
-     <a href="./assets/images/cv.pdf" download>
-  <img  src="./assets/images/dwd.png" alt="W3Schools" width="104" height="102 ">
-</a>
-      </div>
-
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="section_container">
-        <div class="footer_section">
-          <div class="footer_logo">
-            <a href="index.html">
-             
-              <h2>More infomation </h2>
-            </a>
-          </div>
-
-          <div class="useful_links">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#service">Services</a></li>
-              <li><a href="#why">Why Us</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="contact_us">
-            <h3>Contact</h3>
-            <ul>
-              <li>
-                <i class="bx bx-current-location"></i>
-                <span>Kathmandu, Nepal</span>
-              </li>
-              <li>
-                <i class="bx bxs-phone-call"></i> <span>+977-9812660909</span>
-              </li>
-              <li>
-                <i class="bx bxs-time-five"></i>
-                <span> Currently working on own projects</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="follow_us">
-            <h3>Follow</h3>
-            <i class="bx bxl-facebook-circle"></i>
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-instagram-alt"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

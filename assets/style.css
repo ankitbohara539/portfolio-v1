@@ -242,11 +242,11 @@ border-radius: 500px;
     text-align: center;
 }
 
-.about_container .image_section {
-    max-width: 45%;
+.about_container .video_section {
+    
 }
 
-.about_container .image_section img {
+.about_container .video_section video {
     width: 100%;
 }
 
@@ -271,11 +271,11 @@ border-radius: 500px;
 }
 
 .section_container .services_items {
-    width: calc(100% / 3 - 120px);
+    width: calc(120% / 6 - 120px);
 }
 
 .services_items .services_text {
-    text-align: center;
+  text-align: center;
 }
 
 .services_items .services_text h3 {

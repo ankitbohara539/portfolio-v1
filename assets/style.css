@@ -67,7 +67,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgb(40, 36, 36);
+    background-color: rgb(45, 41, 41);
+
 }
 
 nav {
@@ -442,12 +443,23 @@ border-radius: 500px;
 /* Download cv section */
 .cv{
     background-color: rgb(146, 165, 160);
+    padding: 5%;
     
 }
-.cv img{
-    position: relative;
-    left: 50%;
-}
+.btn {
+    background-color: rgb(103, 119, 183);
+    border-radius: 9px 25px 9px 25px;
+    color: rgb(5, 5, 5);
+    padding: 10px 26px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+
+  .btn:hover {
+    background-color: rgb(199, 84, 35);
+  }
+
 
 /* Footer Section */
 footer {

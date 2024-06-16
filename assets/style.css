@@ -18,7 +18,7 @@
     --light-gray-color: #f2f2f2;
 
     /* Site Max-Width */
-    --site-max-width:1350px;
+    --site-max-width: 1350px;
 }
 
 html {
@@ -89,7 +89,7 @@ nav .nav_logo a {
 nav .nav_logo a img {
     max-width: 255px;
     height: 80px;
-  
+
 }
 
 nav .nav_logo h1 {
@@ -208,24 +208,25 @@ label .close_btn {
 
 .hero_container .image_section {
     max-width: 35%;
-    
+
 }
-.image_section img{ 
+
+.image_section img {
     border-radius: 300px;
 }
 
-.photo{
+.photo {
     height: 400px;
 }
 
 .hero_container .image_section img {
-    width:100%;
+    width: 100%;
 }
 
 /* About Us Section */
 .about_us {
     padding: 60px 20px 120px;
-    background-color:rgb(190, 205, 219) ;
+    background-color: rgb(190, 205, 219);
 }
 
 .about_container {
@@ -279,7 +280,7 @@ label .close_btn {
 }
 
 .services_items .services_text {
-  text-align: center;
+    text-align: center;
 }
 
 .services_items .services_text h3 {
@@ -368,7 +369,7 @@ label .close_btn {
     background: var(--light-gray-color);
     padding: 60px 20px 100px;
     border-radius: 50px;
-    
+
 }
 
 .contact_container {
@@ -380,11 +381,11 @@ label .close_btn {
 
 .contact_container .contact_form {
     max-width: 65%;
-    width:100%;
+    width: 100%;
     background-color: #db861778;
     border-radius: 25px;
-   
-  
+
+
 
 }
 
@@ -451,11 +452,12 @@ label .close_btn {
 }
 
 /* Download cv section */
-.cv{
+.cv {
     background-color: rgb(146, 165, 160);
     padding: 5%;
-    
+
 }
+
 .btn {
     background-color: rgb(103, 119, 183);
     border-radius: 9px 25px 9px 25px;
@@ -463,12 +465,12 @@ label .close_btn {
     padding: 10px 26px;
     cursor: pointer;
     font-size: 20px;
-  }
-  
+}
 
-  .btn:hover {
+
+.btn:hover {
     background-color: rgb(199, 84, 35);
-  }
+}
 
 
 /* Footer Section */
@@ -515,7 +517,7 @@ footer {
 }
 
 .footer_section .useful_links ul li a:hover {
-    
+
     background-color: #f3961c;
     border-radius: 5px;
 }
@@ -538,7 +540,7 @@ footer {
 .footer_section .follow_us i {
     font-size: 26px;
     margin-right: 25px;
-    cursor:pointer;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 

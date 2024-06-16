@@ -11,6 +11,9 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +22,24 @@
     <nav>
       <div class="nav_logo">
         <a href="#">
-          <h1 class="tx">AB</h1>
+          <h1 class="tx">ANKIT</h1>
+          <style>
+            .tx{
+              font-family:sans-serif;
+              font-weight: 600;
+              text-decoration: overline;
+
+            }
+            /* .tx::after {
+              content: "";
+              width: 90px;
+              background: var(--secondary-color);
+              height: 5px;
+              display: block;
+              margin: 7px auto 0;
+              border-radius: 50px;
+            } */
+          </style>
 
 
 
@@ -42,7 +62,7 @@
         <li><a href="#download">Download-CV</a></li>
       </ul>
     </nav>
-    
+
   </header>
 
   <!-- Hero Section -->
@@ -63,7 +83,9 @@
         </div>
 
         <div class="image_section">
-          <img src="./assets/images/profile.png" alt="Profile Img" />
+          <img class="photo" src="./assets/images/profile.png"
+            style="border: 5px; border-style: solid; border-color: rgb(238, 148, 13);" alt="Profile Img">
+
         </div>
       </div>
     </div>
@@ -75,18 +97,27 @@
       <div class="about_container">
         <div class="text_section">
           <h2 class="section_title">About me</h2>
-          <a style="font-size: large;">
+          <a class="bebas-neue-regular">
             Motivated and detail-orinted computer science student with foundational skill
             in Html & css, WordPress, git, GitHUb, etc. Knowledble in database management.
             Seeking an internship to apply my skill and gain practical experience in backend
-            developeent.
+            developeent.&nbsp;
           </a>
+          <!-- Font CSS -->
+          <style>
+            .bebas-neue-regular {
+              margin-top: 0%;
+              font-family: cursive;
+              font-weight: 500;
+              font-size: large;
+
+            }
+          </style>
         </div>
-        <!-- VIDEO ADDED HERE -->
-        <div class="video_section">
-          <video id="myVideo" width="350px" height="500px" controls>
-            <source src="./assets/images/vid.mp4" type="video/mp4">
-          </video>
+        <!-- image ADDED HERE -->
+        <div class="img_section">
+          <img src="./assets/images/d.jpg"
+            style="height: 350px; width: 280px; border-radius: 40px; border: 5px; border-style: solid; border-color: rgb(112, 111, 111); ;">
 
         </div>
       </div>
@@ -188,7 +219,7 @@
           <img src="./assets/images/p2.jpg" alt="Gallery Image" />
         </div>
         <div class="gallery_items">
-          <img src="./assets/images/p3.jpeg" alt="Gallery Image" />
+          <img src="./assets/images/p3.jpg" alt="Gallery Image" />
         </div>
         <div class="gallery_items">
           <img src="./assets/images/p4.jpg" alt="Gallery Image" />
@@ -271,7 +302,7 @@
           <button class="btn"><i class="fa fa-download"></i> Download</button>
         </a>
       </h1>
-        
+
     </div>
 
   </section>
@@ -291,9 +322,9 @@
           <h3>Useful Links</h3>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#why">Why Us</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Why me</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -316,12 +347,17 @@
         </div>
 
         <div class="follow_us">
-          <h3>Follow</h3>
-          <i class="bx bxl-facebook-circle"></i>
-          <i class="bx bxl-twitter"></i>
-          <i class="bx bxl-instagram-alt"></i>
+          <h3>Follow me on</h3>
+          <a href="https://www.facebook.com/profile.php?id=100070835915775"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.linkedin.com/in/ankit-bohara-2a5833250/"><i class="fa fa-linkedin-square"></i></a>
+          <a href="https://www.instagram.com/ankiit2027/"><i class="bx bxl-instagram-alt"></i></a>
         </div>
       </div>
+    </div>
+    <div>
+      <h4
+        style="font: weight 600px; text-align: center; margin-top: 5%; background-color: rgba(111, 54, 161, 0.512); opacity: 100%; color: rgb(238, 238, 238); max-width:100%;">
+        &copy; 2024 ANKIT All right reserved </h4>
     </div>
   </footer>
 </body>

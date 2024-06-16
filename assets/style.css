@@ -11,14 +11,14 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #3f4c5a;
+    --primary-color: #3c4753;
     --secondary-color: #f3961c;
     --dark-color: #252525;
     --white-color: #fff;
     --light-gray-color: #f2f2f2;
 
     /* Site Max-Width */
-    --site-max-width: 1350px;
+    --site-max-width:1350px;
 }
 
 html {
@@ -52,13 +52,13 @@ ul {
 }
 
 .section_title::after {
-    content: '';
-    width: 80px;
-    background: var(--secondary-color);
+    content: "";
+    width: 130px;
+    background: rgb(118, 116, 116);
     height: 5px;
     display: block;
     margin: 7px auto 0;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
 /* Styling for the header section */
@@ -207,15 +207,19 @@ label .close_btn {
 }
 
 .hero_container .image_section {
-    max-width: 45%;
+    max-width: 35%;
     
 }
 .image_section img{ 
-border-radius: 500px;
+    border-radius: 300px;
+}
+
+.photo{
+    height: 400px;
 }
 
 .hero_container .image_section img {
-    width: 100%;
+    width:100%;
 }
 
 /* About Us Section */
@@ -243,13 +247,12 @@ border-radius: 500px;
     text-align: center;
 }
 
-.about_container .video_section {
-    
+.img_section img:hover {
+    transition: transform 0.8s ease;
+    transform: scale(1.2);
 }
 
-.about_container .video_section video {
-    width: 100%;
-}
+
 
 
 /* Services Section */
@@ -377,8 +380,15 @@ border-radius: 500px;
 
 .contact_container .contact_form {
     max-width: 65%;
-    width: 100%;
+    width:100%;
+    background-color: #db861778;
+    border-radius: 25px;
+   
+  
+
 }
+
+
 
 .contact_container .contact_form .field {
     margin: 20px 0;
@@ -501,10 +511,13 @@ footer {
 .footer_section .useful_links ul li a {
     color: var(--white-color);
     font-size: 17px;
+    text-transform: uppercase;
 }
 
 .footer_section .useful_links ul li a:hover {
-    text-decoration: underline;
+    
+    background-color: #f3961c;
+    border-radius: 5px;
 }
 
 .footer_section .contact_us ul li {
@@ -525,7 +538,7 @@ footer {
 .footer_section .follow_us i {
     font-size: 26px;
     margin-right: 25px;
-    cursor: pointer;
+    cursor:pointer;
     transition: all 0.3s ease;
 }
 

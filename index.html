@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- google fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IS:wght@100..400&display=swap"
     rel="stylesheet">
@@ -59,7 +60,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#project">My Projects</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#download">Download-CV</a></li>
@@ -86,8 +87,8 @@
         </div>
 
         <div class="image_section">
-          <img class="photo" src="./assets/images/profile.png"
-            style="border: 5px; border-style: solid; border-color: rgb(238, 148, 13);" alt="Profile Img">
+          <img class="photo" src="./assets/images/profile.jpg"
+            style="border: 5px; border-style: solid; border-color: rgb(255, 255, 255);" alt="Profile Img">
 
         </div>
       </div>
@@ -100,11 +101,12 @@
       <div class="about_container">
         <div class="text_section">
           <h2 class="section_title">About me</h2>
-          <a class="bebas-neue-regular">
+          <a class="bebas-neue-regular"><strong>
             Motivated and detail-orinted computer science student with foundational skill
             in Html & css, WordPress, git, GitHUb, etc. Knowledble in database management.
             Seeking an internship to apply my skill and gain practical experience in backend
             developeent.&nbsp;
+            </strong>
           </a>
           <!-- Font CSS -->
           <style>
@@ -113,6 +115,7 @@
               font-family: cursive;
               font-weight: 500;
               font-size: large;
+              color: white;
 
             }
           </style>
@@ -175,13 +178,13 @@
   </section>
 
   <!-- Why me Section -->
-  <section class="why_us" id="portfolio">
+  <section class="why_us" id="project">
     <h2 class="section_title">Why me?</h2>
     <div class="section_container" >
       <div class="why_container" >
         <div class="why_items" >
           
-          <div class="why_us_text" style="background-color: rgb(249, 164, 44); border: 2px; border-radius: 25px; border-style: solid; border-color: black; height: 300px;">
+          <div class="why_us_text">
             <img src="./assets/images/creative.png" alt="creative" />
             <h3>Creative and modern </h3>
             <p>
@@ -190,7 +193,7 @@
           </div>
         </div>
         <div class="why_items">
-          <div class="why_us_text" style="background-color: rgb(109, 189, 232); border: 2px; border-radius: 25px; border-style: solid; border-color: black; height: 300px;">
+          <div class="why_us_text">
             <img src="./assets/images/quality.png" alt="Quality" />
             <h3>Quality Focused</h3>
             <p>
@@ -199,7 +202,7 @@
           </div>
         </div>
         <div class="why_items">
-          <div class="why_us_text" style="background-color: rgb(203, 61, 255); border: 2px; border-radius: 25px; border-style: solid; border-color: black; height: 300px;">
+          <div class="why_us_text">
             <img src="./assets/images/detail.png" alt="detail-orinted" />
             <h3>Detail oriented</h3>
             <p>
@@ -213,7 +216,7 @@
 
   <!-- Gallery Section -->
   <section class="gallery" id="gallery">
-    <h2 class="section_title">Photo Gallery</h2>
+    <h2 class="section_title" style="color: black;">Photo Gallery</h2>
     <div class="section_container">
       <div class="gallery_container">
         <div class="gallery_items">
@@ -240,7 +243,7 @@
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2 class="section_title">Contact me</h2>
+    <h2 class="section_title" style="color: black;">Contact me</h2>
     <div class="section_container">
       <div class="contact_container">
         <div class="contact_form">
@@ -299,9 +302,10 @@
       </div>
     </div>
   </section>
+  <!-- Doenload-CV -->
   <section class="cv" id="download">
     <div>
-      <h1 style="text-align: center;">Download my cv:
+      <h1 >Download my cv:
         <a href="./assets/images/cv.pdf" download>
           <button class="btn"><i class="fa fa-download"></i> Download</button>
         </a>
@@ -360,7 +364,7 @@
     </div>
     <div>
       <h4
-        style="font: weight 600px; text-align: center; margin-top: 5%; background-color: rgba(111, 54, 161, 0.512); opacity: 100%; color: rgb(238, 238, 238); max-width:100%;">
+        style="font: weight 600px; text-align: center; margin-top: 5%; border-top: 1px solid white;">
         &copy; 2024 ANKIT All right reserved </h4>
     </div>
   </footer>

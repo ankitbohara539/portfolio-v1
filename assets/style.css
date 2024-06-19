@@ -11,8 +11,8 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #3c4753;
-    --secondary-color: #f3961c;
+    --primary-color: #000000;
+    --secondary-color: #90704f;
     --dark-color: #252525;
     --white-color: #fff;
     --light-gray-color: #f2f2f2;
@@ -49,6 +49,7 @@ ul {
     font-size: 32px;
     font-family: "Righteous", sans-serif;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .section_title::after {
@@ -67,7 +68,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgb(45, 41, 41);
+    background-color: rgb(18, 16, 16);
+    border-radius: 15px;
+    border-left: 80px solid rgb(119, 99, 61);
+    border-right: 80px solid rgb(119, 99, 61);
 
 }
 
@@ -116,7 +120,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary-color);
-    background-color: var(--secondary-color);
+    background-color: rgb(179, 159, 124);
 }
 
 nav label {
@@ -138,6 +142,7 @@ label .close_btn {
 .hero_section {
     min-height: 100vh;
     background: var(--primary-color);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .hero_container {
@@ -222,7 +227,8 @@ label .close_btn {
 /* About Us Section */
 .about_us {
     padding: 60px 20px 120px;
-    background-color: rgb(190, 205, 219);
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .about_container {
@@ -254,9 +260,10 @@ label .close_btn {
 
 /* Services Section */
 .services {
-    background: var(--dark-color);
+    background: black;
     color: var(--white-color);
     padding: 60px 20px 120px;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .services .service_container {
@@ -291,7 +298,7 @@ label .close_btn {
 
 /* Why me Section */
 .why_us {
-    background: var(--light-gray-color);
+    background: black;
     padding: 60px 20px 120px;
 }
 
@@ -319,6 +326,11 @@ label .close_btn {
 
 .why_items .why_us_text {
     text-align: center;
+    background-color: rgb(27, 28, 36); 
+    border-radius: 25px; 
+    height: 300px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .why_items .why_us_text h3 {
@@ -450,7 +462,12 @@ label .close_btn {
 /* Download cv section */
 .cv {
     background-color: rgb(146, 165, 160);
-    padding: 5%;
+    height: 200px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
 
 }
 
@@ -570,7 +587,7 @@ footer {
     }
 
     #click:checked~ul {
-        left: 0;
+        left: 0px;
     }
 
     #click:checked~label .close_btn {
@@ -579,6 +596,7 @@ footer {
 
     #click:checked~label .menu_btn {
         display: none;
+       
     }
 
     nav ul li {

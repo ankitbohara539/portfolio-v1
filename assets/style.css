@@ -69,10 +69,6 @@ header {
     width: 100%;
     z-index: 1;
     background-color: rgb(18, 16, 16);
-    border-radius: 15px;
-    border-left: 8px solid rgb(119, 99, 61);
-    border-right: 8px solid rgb(119, 99, 61);
-
 }
 
 nav {
@@ -464,8 +460,7 @@ label .close_btn {
     background-color: rgb(146, 165, 160);
     height: 200px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
+
    
 
 }

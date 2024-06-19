@@ -70,8 +70,8 @@ header {
     z-index: 1;
     background-color: rgb(18, 16, 16);
     border-radius: 15px;
-    border-left: 80px solid rgb(119, 99, 61);
-    border-right: 80px solid rgb(119, 99, 61);
+    border-left: 8px solid rgb(119, 99, 61);
+    border-right: 8px solid rgb(119, 99, 61);
 
 }
 
@@ -463,11 +463,10 @@ label .close_btn {
 .cv {
     background-color: rgb(146, 165, 160);
     height: 200px;
-    width: 500px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    margin-left: 35%;
+   
 
 }
 
